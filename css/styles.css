@@ -1,4 +1,5 @@
-body {
+body,
+body.body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -47,7 +48,7 @@ body {
 }
 
 /*Active */
-.active {
+.link.active {
   color: #2196f3;
 }
 
@@ -58,12 +59,21 @@ body {
   color: #2196f3;
 }
 
-/* HERO */
+/* Section-caption*/
+.section-caption {
+  color: #212121;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/*Hero section*/
 .hero-capt {
   color: #ffffff;
 
   /* background to see the header */
-  background-color: #757575;
+  background-color: #747474;
 
   font-weight: 900;
   font-size: 44px;
@@ -79,8 +89,89 @@ body {
   color: #ffffff;
 
   font-family: Roboto;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+/* Section our advantage */
+.list-item h3 {
+  color: #212121;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.list-item p {
+  color: #757575;
+
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 1.71;
+}
+
+/* Section our team */
+.item-team h3 {
+  color: #212121;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.item-team p {
+  color: #757575;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* FOOTER */
+.item-adress a {
+  color: #ffffff;
+  background-color: #000000;
+
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.link.adress {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+.list button {
+  background: #f5f4fa;
+  color: #212121;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+button.accent-btn {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.link h2 {
+  color: #212121;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.link p {
+  color: #757575;
+
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.87;
 }
