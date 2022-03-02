@@ -1,3 +1,11 @@
+:root {
+  --link-accent: #2196f3;
+  --firstly-accent: #000000;
+  --secondary-accent: #ffffff;
+  --main-text: #212121;
+  --secondary-text: #757575;
+}
+
 body,
 body.body {
   font-family: 'Roboto', sans-serif;
@@ -14,7 +22,7 @@ body.body {
 
 /* Logo */
 .logo {
-  color: #000000;
+  color: var(--link-accent);
 
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -23,13 +31,18 @@ body.body {
 }
 
 /* Logo accent */
-.logo-accent {
-  color: #2196f3;
+.logo-firstly {
+  color: var(--firstly-accent);
+}
+
+.logo-secondary {
+  color: var(--secondary-accent);
+  background-color: var(--secondary-text);
 }
 
 /* Menu nav */
 .header-list a {
-  color: #212121;
+  color: var(--main-text);
 
   font-weight: 500;
   font-size: 14px;
@@ -39,7 +52,7 @@ body.body {
 
 /* Contacts */
 .contacts a {
-  color: #757575;
+  color: var(--secondary-text);
 
   font-weight: 500;
   font-size: 14px;
@@ -49,19 +62,19 @@ body.body {
 
 /*Active */
 .link.active {
-  color: #2196f3;
+  color: var(--link-accent);
 }
 
 .header-list a:hover,
 .header-list a:focus,
 .contacts a:hover,
 .contacts a:focus {
-  color: #2196f3;
+  color: var(--link-accent);
 }
 
 /* Section-caption*/
 .section-caption {
-  color: #212121;
+  color: var(--main-text);
 
   font-size: 36px;
   line-height: 1.16;
@@ -70,10 +83,10 @@ body.body {
 
 /*Hero section*/
 .hero-capt {
-  color: #ffffff;
+  color: var(--secondary-accent);
 
   /* background to see the header */
-  background-color: #747474;
+  background-color: var(--secondary-text);
 
   font-weight: 900;
   font-size: 44px;
@@ -85,8 +98,8 @@ body.body {
 
 /* Button */
 .btn {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--link-accent);
+  color: var(--secondary-accent);
 
   font-family: Roboto;
   font-weight: 700;
@@ -99,7 +112,7 @@ body.body {
 
 /* Section our advantage */
 .list-item h3 {
-  color: #212121;
+  color: var(--main-text);
 
   font-size: 14px;
   line-height: 1.14;
@@ -107,7 +120,7 @@ body.body {
 }
 
 .list-item p {
-  color: #757575;
+  color: var(--secondary-text);
 
   font-size: 14px;
   font-weight: 400px;
@@ -116,7 +129,7 @@ body.body {
 
 /* Section our team */
 .item-team h3 {
-  color: #212121;
+  color: var(--main-text);
 
   font-weight: 500;
   font-size: 16px;
@@ -124,7 +137,7 @@ body.body {
 }
 
 .item-team p {
-  color: #757575;
+  color: var(--secondary-text);
 
   font-weight: 400;
   font-size: 16px;
@@ -133,14 +146,15 @@ body.body {
 
 /* FOOTER */
 .item-adress a {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--secondary-accent);
+  background-color: var(--firstly-accent);
 
   font-style: normal;
   font-weight: 400px;
   font-size: 14px;
   line-height: 1.71;
 }
+
 .link.adress {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -149,13 +163,13 @@ body.body {
 .link.adress:focus,
 .item-adress a:hover,
 .item-adress a:focus {
-  color: #2196f3;
+  color: var(--link-accent);
 }
 
 /* Portfolio */
 .list button {
   background: #f5f4fa;
-  color: #212121;
+  color: var(--main-text);
 
   font-family: Roboto;
   font-weight: 500;
@@ -166,12 +180,12 @@ body.body {
 }
 
 button.accent-btn {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--link-accent);
+  color: var(--secondary-accent);
 }
 
 .link h2 {
-  color: #212121;
+  color: var(--main-text);
 
   font-weight: 700;
   font-size: 18px;
@@ -179,7 +193,7 @@ button.accent-btn {
   letter-spacing: 0.06em;
 }
 .link p {
-  color: #757575;
+  color: var(--secondary-text);
 
   font-weight: 400px;
   font-size: 16px;
