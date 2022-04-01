@@ -11,6 +11,7 @@ body.body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
+
 /* Off style link */
 .link {
   text-decoration: none;
@@ -19,6 +20,8 @@ body.body {
 .list {
   list-style-type: none;
 }
+
+/* ===========HEADER=========== */
 
 /* Logo */
 .logo {
@@ -41,7 +44,7 @@ body.body {
 }
 
 /* Menu nav */
-.header-list a {
+.header-list .link {
   color: var(--main-text);
 
   font-weight: 500;
@@ -51,7 +54,7 @@ body.body {
 }
 
 /* Contacts */
-.contacts a {
+.contacts .link {
   color: var(--secondary-text);
 
   font-weight: 500;
@@ -65,21 +68,14 @@ body.body {
   color: var(--link-accent);
 }
 
-.header-list a:hover,
-.header-list a:focus,
-.contacts a:hover,
-.contacts a:focus {
+.header-list .link:hover,
+.header-list .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--link-accent);
 }
 
-/* Section-caption*/
-.section-caption {
-  color: var(--main-text);
-
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
+/* ===========HERO=========== */
 
 /*Hero section*/
 .hero-capt {
@@ -110,8 +106,22 @@ body.body {
   cursor: pointer;
 }
 
-/* Section our advantage */
-.list-item h3 {
+/*cant see */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* =========Section our advantage========== */
+.item-caption {
   color: var(--main-text);
 
   font-size: 14px;
@@ -119,7 +129,7 @@ body.body {
   text-transform: uppercase;
 }
 
-.list-item p {
+.item-text {
   color: var(--secondary-text);
 
   font-size: 14px;
@@ -127,8 +137,17 @@ body.body {
   line-height: 1.71;
 }
 
+/* What we do */
+.section-caption {
+  color: var(--main-text);
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
 /* Section our team */
-.item-team h3 {
+.team-caption {
   color: var(--main-text);
 
   font-weight: 500;
@@ -136,7 +155,7 @@ body.body {
   line-height: 1.19;
 }
 
-.item-team p {
+.team-text {
   color: var(--secondary-text);
 
   font-weight: 400;
@@ -144,8 +163,8 @@ body.body {
   line-height: 1.19;
 }
 
-/* FOOTER */
-.item-adress a {
+/* =============FOOTER====================== */
+.item-adress .link {
   color: var(--secondary-accent);
   background-color: var(--firstly-accent);
 
@@ -161,13 +180,13 @@ body.body {
 
 .link.adress:hover,
 .link.adress:focus,
-.item-adress a:hover,
-.item-adress a:focus {
+.item-adress .link:hover,
+.item-adress .link:focus {
   color: var(--link-accent);
 }
 
-/* Portfolio */
-.list button {
+/* ==========Portfolio =================*/
+.list .item-btn {
   background: #f5f4fa;
   color: var(--main-text);
 
@@ -179,12 +198,12 @@ body.body {
   cursor: pointer;
 }
 
-button.accent-btn {
+.item-btn.accent-btn {
   background: var(--link-accent);
   color: var(--secondary-accent);
 }
 
-.link h2 {
+.gallery-capt {
   color: var(--main-text);
 
   font-weight: 700;
@@ -192,7 +211,7 @@ button.accent-btn {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.link p {
+.gallery-text {
   color: var(--secondary-text);
 
   font-weight: 400px;
