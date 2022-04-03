@@ -201,7 +201,7 @@ body.body {
   background: #f5f4fa;
   color: var(--main-text);
 
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
